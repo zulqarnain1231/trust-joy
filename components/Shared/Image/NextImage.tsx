@@ -7,7 +7,7 @@ interface Props {
   imageSrc: string;
 }
 const NextImage: React.FC<Props> = ({
-  imageStyle = "object-cover pointer-events-none",
+  imageStyle = "object-fill pointer-events-none",
   containerStyle,
   imageSrc,
 }: Props) => {
