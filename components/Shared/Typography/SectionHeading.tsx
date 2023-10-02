@@ -5,7 +5,7 @@ type Props = {
 };
 const SectionHeading: React.FC<Props> = ({ text }: Props) => {
   return (
-    <h2 className="text-brand-main text-center font-normal font-caveat sm:text-5xl text-4xl">
+    <h2 className="text-brand-main text-left font-normal font-caveat sm:text-5xl text-4xl">
       {text}
     </h2>
   );
