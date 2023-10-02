@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         brand: {
           main: "#7B71EB",
+          secondary: "#5500BF",
         },
         white: {
           main: "#FFF",

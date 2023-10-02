@@ -1,6 +1,7 @@
 import BookCall from "@/components/Home/BookCall";
 import Collect from "@/components/Home/Collect";
 import Display from "@/components/Home/Display";
+import Example from "@/components/Home/Example";
 import GoogleRichSnippets from "@/components/Home/GoogleRichSnippets";
 import Hero from "@/components/Home/Hero/Hero";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
@@ -22,6 +23,7 @@ export default function Home() {
       <HowItWorks />
       <Collect />
       <Display />
+      <Example />
       <ReplyAi />
       <Share />
       <GoogleRichSnippets />
