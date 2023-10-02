@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.MuiAccordion-root:not(:last-child) {
+  border-bottom: 2px solid #dadbe5 !important;
+  z-index: 10;
+  padding: 20px 0px;
+}

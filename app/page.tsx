@@ -2,6 +2,7 @@ import BookCall from "@/components/Home/BookCall";
 import Collect from "@/components/Home/Collect";
 import Display from "@/components/Home/Display";
 import Example from "@/components/Home/Example";
+import Faqs from "@/components/Home/Faqs/Faqs";
 import GoogleRichSnippets from "@/components/Home/GoogleRichSnippets";
 import Hero from "@/components/Home/Hero/Hero";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
@@ -29,6 +30,7 @@ export default function Home() {
       <GoogleRichSnippets />
       <WhatCustomerSays />
       <Industries />
+      <Faqs />
       <BookCall />
       <Resources />
       <Footer />
