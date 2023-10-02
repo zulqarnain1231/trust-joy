@@ -19,7 +19,7 @@ const Navbar = () => {
     <>
       <ComponentWrapper id="navbar">
         <nav className="w-full h-[70px] flex items-center justify-between">
-          <Link href={"/"} className="w-[140px] h-[32px] relative">
+          <Link href={"/"} className="w-[140px] h-[40px] relative">
             <Image
               src={"/Assets/Logo.png"}
               className="w-full h-full object-fill"

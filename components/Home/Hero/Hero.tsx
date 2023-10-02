@@ -17,7 +17,7 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="w-full flex items-center justify-center gap-6">
+        <div className="w-full flex sm:flex-nowrap flex-wrap items-center justify-center gap-6">
           {[
             "Get More Reviews, Faster",
             "No technical skills required",
