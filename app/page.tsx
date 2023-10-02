@@ -1,10 +1,12 @@
 import Collect from "@/components/Home/Collect";
 import Display from "@/components/Home/Display";
+import GoogleRichSnippets from "@/components/Home/GoogleRichSnippets";
 import Hero from "@/components/Home/Hero/Hero";
 import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
 import ReplyAi from "@/components/Home/ReplyAi";
 import Share from "@/components/Home/Share";
 import TrustedBy from "@/components/Home/TrustedBy";
+import WhatCustomerSays from "@/components/Home/WhatCustomerSays/WhatCustomerSays";
 import Navbar from "@/components/Shared/Navigaitons/Navbar";
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <Display />
       <ReplyAi />
       <Share />
+      <GoogleRichSnippets />
+      <WhatCustomerSays />
     </main>
   );
 }
