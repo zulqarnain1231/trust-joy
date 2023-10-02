@@ -10,6 +10,7 @@ import Resources from "@/components/Home/ResourcesToHelp/Resources";
 import Share from "@/components/Home/Share";
 import TrustedBy from "@/components/Home/TrustedBy";
 import WhatCustomerSays from "@/components/Home/WhatCustomerSays/WhatCustomerSays";
+import Footer from "@/components/Shared/Navigaitons/Footer";
 import Navbar from "@/components/Shared/Navigaitons/Navbar";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       <Industries />
       <BookCall />
       <Resources />
+      <Footer />
     </main>
   );
 }
