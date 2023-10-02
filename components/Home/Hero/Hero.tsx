@@ -9,10 +9,10 @@ const Hero = () => {
     <ComponentWrapper id="hero" style="w-full lg:mt-16 mt-10 pb-10">
       <div className="w-full h-full flex flex-col items-center justify-center gap-10">
         <div className="w-full flex flex-col items-center justify-start gap-3">
-          <h1 className="text-brand-main text-center text-5xl font-normal">
+          <h1 className="text-brand-main text-center sm:text-5xl text-4xl font-normal">
             The most powerful way to collect reviews
           </h1>
-          <h1 className="text-black-main text-center text-5xl font-normal">
+          <h1 className="text-black-main text-center sm:text-5xl text-4xl font-normal">
             Get more reviews, win more customers
           </h1>
         </div>
