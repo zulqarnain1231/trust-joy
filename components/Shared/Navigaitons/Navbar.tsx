@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,6 +15,26 @@ import "react-modern-drawer/dist/index.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [Show, setShow] = useState<boolean>(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY < lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  });
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
@@ -46,8 +66,13 @@ const Navbar = () => {
   ];
   return (
     <>
-      <ComponentWrapper id="navbar">
-        <nav className="w-full h-[70px] flex items-center justify-between">
+      <ComponentWrapper
+        id="navbar"
+        style={`h-[70px] bg-white-main z-20 sticky top-0 ${
+          Show && "md:-top-[70px]"
+        } transition-all duration-1000`}
+      >
+        <nav className="w-full h-full flex items-center justify-between">
           <Link href={"/"} className="w-[140px] h-[46px] relative">
             <Image
               src={"/Assets/Logo.png"}
@@ -171,8 +196,10 @@ const Navbar = () => {
           >
             Affiliates
           </Link>
-          <OutlinedBtn event={toggleDrawer} text=" Login" />
-          <FilledBtn event={toggleDrawer} text="Book a demo " />
+          <div className="w-full flex sm:flex-row flex-col items-center justify-start gap-6">
+            <OutlinedBtn event={toggleDrawer} text=" Login" />
+            <FilledBtn event={toggleDrawer} text="Book a demo " />
+          </div>
         </div>
       </Drawer>
     </>

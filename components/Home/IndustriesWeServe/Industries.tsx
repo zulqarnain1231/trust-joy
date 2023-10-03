@@ -19,12 +19,12 @@ const Industries = () => {
       <h2 className="text-black-main text-center text-[38px] leading-[50px] font-normal font-poppins">
         Here are just a few of the industries we serve
       </h2>
-      <Marquee direction="right">
+      <Marquee direction="right" pauseOnHover>
         {industries.map((item: string, index: number) => (
           <IndustryCard key={index} name={item} />
         ))}
       </Marquee>
-      <Marquee direction="left">
+      <Marquee direction="left" pauseOnHover>
         {industries.map((item: string, index: number) => (
           <IndustryCard key={index} name={item} />
         ))}

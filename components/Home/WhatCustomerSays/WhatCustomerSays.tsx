@@ -10,7 +10,7 @@ const WhatCustomerSays = () => {
       <h2 className="text-black-main text-center text-[38px] leading-[50px] font-normal font-poppins">
         What our customers are saying
       </h2>
-      <Marquee>
+      <Marquee pauseOnHover>
         <CustomerCard />
         <CustomerCard />
         <CustomerCard />
