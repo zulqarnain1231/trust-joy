@@ -7,6 +7,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { FaPlay, FaDownload } from "react-icons/fa";
 import { RiMenu3Fill, RiSparklingLine } from "react-icons/ri";
 import { PiMonitorFill } from "react-icons/pi";
+import { MdCancel } from "react-icons/md";
 import FilledBtn from "../Buttons/FilledBtn";
 import OutlinedBtn from "../Buttons/OutlinedBtn";
 import Drawer from "react-modern-drawer";
@@ -129,7 +130,50 @@ const Navbar = () => {
         className="bla bla bla"
         style={{ width: "100%" }}
       >
-        <button onClick={toggleDrawer}>close</button>
+        <div className="w-full h-full flex flex-col items-start justify-start gap-6 p-4">
+          <div className="w-full flex items-center justify-end">
+            <button onClick={toggleDrawer}>
+              <MdCancel className="text-red-600 text-3xl" />
+            </button>
+          </div>
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="text-sm text-black-main font-medium hover:text-brand-main hover:duration-200"
+          >
+            Product Tour
+          </Link>
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="text-sm text-black-main font-medium hover:text-brand-main hover:duration-200"
+          >
+            Trustjoy <span className="text-brand-main">AI</span>
+          </Link>
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="text-sm text-black-main font-medium hover:text-brand-main hover:duration-200"
+          >
+            Pricing
+          </Link>
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="text-sm text-black-main font-medium hover:text-brand-main hover:duration-200"
+          >
+            Blog
+          </Link>
+          <Link
+            href={"/"}
+            onClick={toggleDrawer}
+            className="text-sm text-black-main font-medium hover:text-brand-main hover:duration-200"
+          >
+            Affiliates
+          </Link>
+          <OutlinedBtn event={toggleDrawer} text=" Login" />
+          <FilledBtn event={toggleDrawer} text="Book a demo " />
+        </div>
       </Drawer>
     </>
   );

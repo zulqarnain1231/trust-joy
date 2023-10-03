@@ -9,7 +9,7 @@ type Props = {
 const OutlinedBtn: React.FC<Props> = ({
   text,
   event = () => {},
-  style = "h-[45px] w-[104px] text-sm font-normal",
+  style = "h-[45px] sm:w-[104px] w-full text-sm font-normal",
 }: Props) => {
   return (
     <button
