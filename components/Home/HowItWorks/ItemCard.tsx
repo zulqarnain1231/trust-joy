@@ -10,7 +10,7 @@ type Props = {
 const ItemCard: React.FC<Props> = ({ image, title, detail }: Props) => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-6 rounded-[20px] border-2 border-white-secondary px-5 py-7 shadow-sm">
-      <NextImage imageSrc={image} containerStyle="w-[220px] h-[235px]" />
+      <NextImage imageSrc={image} containerStyle="w-[190px] h-[200px]" />
       <p className="text-brand-main text-xl font-normal text-center">{title}</p>
       <p className="text-black-off/60 text-lg font-normal text-center font-dmSans">
         {detail}
