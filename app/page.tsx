@@ -1,3 +1,4 @@
+import Head from "next/head";
 import BookCall from "@/components/Home/BookCall";
 import Collect from "@/components/Home/Collect";
 import Display from "@/components/Home/Display";
@@ -18,6 +19,9 @@ import Navbar from "@/components/Shared/Navigaitons/Navbar";
 export default function Home() {
   return (
     <main className="w-full h-full">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <Navbar />
       <Hero />
       <TrustedBy />

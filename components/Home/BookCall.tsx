@@ -12,7 +12,11 @@ const BookCall = () => {
             Book a free call with one of our experts and get more customers from
             your Google Review
           </h2>
-          <FilledBtn text="Book a free call" bgColor="bg-white-main" />
+          <FilledBtn
+            text="Book a free call"
+            bgColor="bg-white-main"
+            route="https://calendly.com/trustjoy/30min"
+          />
 
           <p className="text-white-off text-center sm:text-lg text-base font-normal">
             No sales, no risks, no commitments – only benefits.
