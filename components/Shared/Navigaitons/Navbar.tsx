@@ -140,7 +140,10 @@ const Navbar = () => {
           </div>
           <div className="h-full lg:flex hidden items-center justify-center gap-6">
             <OutlinedBtn text=" Login" />
-            <FilledBtn text="Book a demo " />
+            <FilledBtn
+              text="Book a demo "
+              route="https://calendly.com/trustjoy/30min"
+            />
           </div>
           <RiMenu3Fill
             onClick={toggleDrawer}
@@ -198,7 +201,11 @@ const Navbar = () => {
           </Link>
           <div className="w-full flex sm:flex-row flex-col items-center justify-start gap-6">
             <OutlinedBtn event={toggleDrawer} text=" Login" />
-            <FilledBtn event={toggleDrawer} text="Book a demo " />
+            <FilledBtn
+              event={toggleDrawer}
+              text="Book a demo "
+              route="https://calendly.com/trustjoy/30min"
+            />
           </div>
         </div>
       </Drawer>
