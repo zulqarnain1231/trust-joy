@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="w-full flex flex-col items-start justify-start gap-4">
             <Link
               href={"/"}
-              className="sm:w-[230px] w-[200px] sm:h-[68px] h-[56px] relative"
+              className="sm:w-[200px] w-[200px] sm:h-[66px] h-[56px] relative"
             >
               <Image
                 src={"/Assets/Logo.png"}

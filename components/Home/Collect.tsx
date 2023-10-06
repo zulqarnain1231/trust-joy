@@ -54,10 +54,11 @@ const Collect = () => {
             style="sm:w-[330px] w-full h-[45px] text-sm font-normal"
           />
         </div>
-        <div className="w-full lg:h-full sm:h-[500px] h-[300px] flex items-center justify-end">
+        <div className="w-full lg:h-full sm:h-[500px] h-[300px] flex items-center justify-start">
           <NextImage
             imageSrc="/Assets/Mobile.png"
-            containerStyle="lg:w-[90%] w-full h-full"
+            imageStyle="object-contain"
+            containerStyle="xl:w-[70%] lg:w-[90%] w-full h-full"
           />
         </div>
       </div>

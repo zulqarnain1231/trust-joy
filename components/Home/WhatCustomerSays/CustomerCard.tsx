@@ -1,16 +1,27 @@
 import React from "react";
+import NextImage from "@/components/Shared/Image/NextImage";
+import { FcGoogle } from "react-icons/fc";
 
 const CustomerCard = () => {
   return (
-    <div className="w-[260px] flex flex-col items-center justify-start gap-6 rounded-[10px] border-2 border-white-secondary p-3 font-poppins mx-4 cursor-pointer">
-      <div className="w-full flex flex-col items-center justify-start gap-2">
-        <p className="text-black-main text-base font-normal">Name</p>
-        <p className="text-sm text-black-off/80 font-normal">Company</p>
-      </div>
+    <div className="w-full flex flex-col items-center justify-center gap-3 rounded-[10px] bg-[#E6E7FF] px-5 py-12 font-poppins cursor-pointer">
+      <NextImage
+        imageSrc="/Assets/Hero/Reviews.png"
+        containerStyle="h-[16px] w-[100px]"
+      />
+      <FcGoogle className="text-2xl" />
+
       <p className="text-center text-base text-black-main font-normal">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's
+        Lorem Ipsum is simply dummy text of the printing
       </p>
+      <p className="text-center text-base text-black-main font-semibold">
+        Luke Jhons
+      </p>
+      <NextImage
+        imageSrc="/Assets/User.jpg"
+        imageStyle="object-cover rounded-full pointer-events-none"
+        containerStyle="h-[44px] w-[44px] rounded-full"
+      />
     </div>
   );
 };

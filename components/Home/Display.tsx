@@ -16,11 +16,12 @@ const Display = () => {
   ];
   return (
     <ComponentWrapper id="display" style="lg:py-16 py-10">
-      <div className="w-full grid lg:grid-cols-2 lg:gap-6 gap-10">
+      <div className="w-full lg:grid flex flex-col-reverse items-center justify-start lg:grid-cols-2 lg:gap-6 gap-10">
         <div className="w-full lg:h-full sm:h-[500px] h-[300px] flex items-center justify-start">
           <NextImage
             imageSrc="/Assets/Display.png"
-            containerStyle="lg:w-[90%] w-full h-full"
+            containerStyle="xl:w-[70%] lg:w-[90%] w-full h-full"
+            imageStyle="object-contain"
           />
         </div>
         <div className="lg:w-[70%] w-full flex flex-col items-start justify-start gap-5">

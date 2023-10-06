@@ -4,7 +4,7 @@ import NextImage from "../Shared/Image/NextImage";
 
 const TrustedBy = () => {
   return (
-    <ComponentWrapper id="trustedby" style="lg:py-16 py-10">
+    <ComponentWrapper id="trustedby" style="lg:py-16 py-10 md:flex hidden">
       <div className="w-full flex flex-col items-center justify-start gap-6">
         <h3 className="text-center text-brand-main text-2xl font-normal">
           Trusted by +10,000 users from +100 countries

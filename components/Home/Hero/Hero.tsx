@@ -49,19 +49,19 @@ const Hero = () => {
         </div>
         {/* laptop image here */}
         <div className="w-full grid xl:grid-cols-[130px,950px,130px] lg:grid-cols-[.7fr,3fr,.7fr] gap-10">
-          <div className="w-full h-full flex flex-col items-center justify-start">
+          <div className="w-full h-full lg:flex hidden flex-col items-center justify-start">
             <NextImage
               imageSrc="/Assets/Hero/GoogleReview.png"
               containerStyle="lg:w-full w-[200px] h-[120px]"
             />
           </div>
-          <div className="w-full xl:h-[530px] sm:h-[400px] h-[250px]">
+          <div className="w-full xl:h-[530px] sm:h-[400px] h-[230px]">
             <NextImage
               imageSrc="/Assets/Hero/Laptop.png"
               containerStyle="w-full h-full"
             />
           </div>
-          <div className="w-full h-full flex flex-col items-center justify-end">
+          <div className="w-full h-full lg:flex hidden flex-col items-center justify-end">
             <NextImage
               imageSrc="/Assets/Hero/GoogleReview.png"
               containerStyle="lg:w-full w-[200px] h-[120px]"

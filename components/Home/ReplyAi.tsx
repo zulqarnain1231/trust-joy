@@ -36,6 +36,7 @@ const ReplyAi = () => {
         <div className="w-full lg:h-full sm:h-[500px] h-[300px] flex items-center justify-end">
           <NextImage
             imageSrc="/Assets/ReplyAi.png"
+            imageStyle="object-contain"
             containerStyle="xl:w-[90%] w-full h-full"
           />
         </div>

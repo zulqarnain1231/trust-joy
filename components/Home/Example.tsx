@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import ComponentWrapper from "../Shared/Wrappers/ComponentWrapper";
 import OutlinedBtn from "../Shared/Buttons/OutlinedBtn";
+import Link from "next/link";
 
 const Example = () => {
   const [copied, setCopied] = useState(false);
@@ -34,10 +35,13 @@ const Example = () => {
               event={copyToClipboard}
               style="text-sm text-black-main h-[45px] sm:w-[190px] w-full"
             />
-            <OutlinedBtn
-              text="Live demo"
-              style="text-sm text-black-main h-[45px] sm:w-[130px] w-full"
-            />
+            <Link
+              className="text-sm text-black-main h-[45px] sm:w-[130px] w-full flex items-center justify-center rounded-[8px] border border-white-off"
+              href={"https://jsfiddle.net/"}
+            >
+              Live demo
+            </Link>
+
             <p className="text-sm text-brand-secondary fonr-normal">
               Implementation guides
             </p>
